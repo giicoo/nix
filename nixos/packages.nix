@@ -9,5 +9,6 @@
     home-manager
     gedit
     git
+    openssh
   ];
 }
