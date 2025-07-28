@@ -1,6 +1,7 @@
 {
   imports = [
     ./modules/bundle.nix
+    ./zsh.nix
   ];
 
   home = {

@@ -5,6 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./packages.nix
+      ./nvidia.nix
       ./modules/bundle.nix
     ];
 
