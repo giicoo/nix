@@ -9,5 +9,6 @@
     ./terminal.nix
     ./rofi.nix
     ./firefox.nix
+    ./zed.nix
   ];
 }

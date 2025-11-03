@@ -18,7 +18,16 @@ in {
   };
   
   environment.systemPackages = with pkgs; [
-
+    jetbrains.pycharm-community
+    jetbrains.clion
+    neovim
+    imv
+    yarn
+    system76-power
+    telegram-desktop
+    vim
+    zed-editor
+    p7zip
     kitty
     vscode
     home-manager
@@ -28,7 +37,7 @@ in {
     waybar
     rofi
     wofi
-    
+    uv 
     wezterm
     ghostty
     zsh
@@ -40,6 +49,12 @@ in {
     slurp
     wl-clipboard
 
+    qmk
+    qmk-udev-rules # the only relevant
+    qmk_hid
+    via
+    vial 
+    nodejs
 
     libreoffice-qt
     hunspell
@@ -63,6 +78,8 @@ in {
     xdg-desktop-portal
     xdg-desktop-portal-gtk
     dotnet-sdk
+    dotnet-runtime
+    omnisharp-roslyn
     python
     postgresql
     mosquitto

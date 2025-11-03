@@ -13,5 +13,6 @@
     ./torrent.nix
     ./mqtt.nix
     ./nlp.nix
+    ./udev.nix
   ];
 }
