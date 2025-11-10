@@ -1,138 +1,130 @@
-{ 
-  inputs, 
-  pkgs, 
-  ... 
-}: let 
-    swww = inputs.swww.packages.${pkgs.system}.swww;
-
+{
+  inputs,
+  pkgs,
+  ...
+}: let
     sddm-theme = inputs.silentSDDM.packages.${pkgs.system}.default.override {
-      theme = "default"; # select the config of your choice
+      theme = "default";
     };
 
-    python = (pkgs.python3.withPackages (python-pkgs: [
-    ]));
-  
+    python = (pkgs.python3.withPackages (python-pkgs: []));
 in {
    nixpkgs.config = {
     allowUnfree = true;
   };
-  
+
   environment.systemPackages = with pkgs; [
+    # jetbrains
     jetbrains.pycharm-community
+    jetbrains.rider
     jetbrains.clion
-    neovim
-    imv
-    yarn
-    system76-power
+
+    # apps
     telegram-desktop
-    vim
-    zed-editor
-    p7zip
-    kitty
-    vscode
-    home-manager
     gedit
+    kitty
+    obsidian
+
+    # terminal
+    zsh
+    zsh-powerlevel10k
+    ghostty
+    wezterm
+
+    # utils
     git
     openssh
+    p7zip
+    system76-power
+    openvpn
+    fastfetch
+    zip
+    unzip
+    imv
+    openssl
+    poetry
+    ffmpeg
+
+    # editor
+    neovim
+    zed-editor
+    vscode
+    vim
+
+    # hyprland
+    hyprpaper
     waybar
     rofi
     wofi
-    uv 
-    wezterm
-    ghostty
-    zsh
-    zsh-powerlevel10k
-    obsidian
-    openvpn
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
 
+    # nemo
+    nemo-with-extensions
+    file-roller
+
+    # prog
+    yarn
+    nodejs
+    docker-compose
+    dotnet-sdk
+    dotnet-runtime
+    python
+    postgresql
+    mosquitto
+    cmake
+    clang
+    gcc
+    gcc
+    gnumake
+    omnisharp-roslyn
+    uv
+    qtcreator
+
+    # nix
+    home-manager
+
+    # screen shots
     grim
     slurp
     wl-clipboard
 
+    # keyboard
     qmk
-    qmk-udev-rules # the only relevant
+    qmk-udev-rules
     qmk_hid
     via
-    vial 
-    nodejs
+    vial
 
+    # themes
+    materia-theme
+    papirus-icon-theme
+    bibata-cursors
+    transmission_4-gtk
+    sddm-theme
+    qt5.full
+
+    # libre
     libreoffice-qt
     hunspell
     hunspellDicts.uk_UA
 
-    fastfetch
-    nemo-with-extensions
-    file-roller
-    unzip
-    zip
-
-    materia-theme
-    papirus-icon-theme
-    bibata-cursors
-
-    swww
-
-    sddm-theme
-    openssl
-    docker-compose  
-    xdg-desktop-portal
-    xdg-desktop-portal-gtk
-    dotnet-sdk
-    dotnet-runtime
-    omnisharp-roslyn
-    python
-    postgresql
-    mosquitto
-    transmission_4-gtk
+    # WINDOWS!!!!
     bottles
-    gcc
-    jetbrains.rider
-
-    poetry
-    ffmpeg
-
-    qt5.full
-    qtcreator
-    cmake
-    clang
-    gcc
-    gnumake
-    bottles
-    
     wineWowPackages.stable
-
-    # support 32-bit only
     wine
-
-    # support 64-bit only
     (wine.override { wineBuild = "wine64"; })
-
-    # support 64-bit only
     wine64
-
-    # wine-staging (version with experimental features)
     wineWowPackages.staging
-
-    # winetricks (all versions)
-    winetricks
-
-    
     winetricks
     lutris
-    
-  
-
-
-    protonup-qt 
+    protonup-qt
     protontricks
-  
-  
-
     steam
     vulkan-tools
     mesa-demos
 
-    
+
   ];
 
   fonts.packages = with pkgs; [

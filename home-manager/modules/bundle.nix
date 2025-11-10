@@ -9,5 +9,6 @@
     ./rofi.nix
     ./firefox.nix
     ./zed.nix
+    ./hyprpaper.nix
   ];
 }
