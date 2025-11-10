@@ -3,11 +3,10 @@
 
     packages = with pkgs; [
         qmk
-        qmk-udev-rules # the only relevant
+        qmk-udev-rules
         qmk_hid
         via
         vial
-    ]; # packages
-
-}; # udev
+      ];
+    };
 }

@@ -14,7 +14,7 @@
 
       hms = "home-manager switch --flake ${flakeDir}";
 
-      conf = "code ${flakeDir}";
+      conf = "zeditor ${flakeDir}";
 
       ll = "ls -l";
       v = "nvim";

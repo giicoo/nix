@@ -90,6 +90,49 @@ in {
 
     poetry
     ffmpeg
+
+    qt5.full
+    qtcreator
+    cmake
+    clang
+    gcc
+    gnumake
+    bottles
+    
+    wineWowPackages.stable
+
+    # support 32-bit only
+    wine
+
+    # support 64-bit only
+    (wine.override { wineBuild = "wine64"; })
+
+    # support 64-bit only
+    wine64
+
+    # wine-staging (version with experimental features)
+    wineWowPackages.staging
+
+    # winetricks (all versions)
+    winetricks
+
+    
+    winetricks
+    lutris
+    
+  
+
+
+    protonup-qt 
+    protontricks
+  
+  
+
+    steam
+    vulkan-tools
+    mesa-demos
+
+    
   ];
 
   fonts.packages = with pkgs; [

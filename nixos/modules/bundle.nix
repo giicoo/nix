@@ -11,8 +11,9 @@
     ./sddm.nix
     ./docker.nix
     ./torrent.nix
-    ./mqtt.nix
     ./nlp.nix
     ./udev.nix
+    ./steam.nix
+    ./audio.nix
   ];
 }
