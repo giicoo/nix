@@ -16,13 +16,11 @@
         };
 
     "clock" = {
-        # timezone = "America/New_York";
         tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
         format = "{:%H:%M}";
     };
 
     "pulseaudio" = {
-        # scroll-step = 1; # %, can be a float
         reverse-scrolling = 1;
         format = "{volume}% {icon}";
         format-bluetooth = "{volume}% {i%d %b  con}";
@@ -48,7 +46,6 @@
         min-length = 7;
     };
 
-
     tray = {
         icon-size = 16;
         spacing = 0;
@@ -56,8 +53,8 @@
 
       };
     };
-  
-    style = 
+
+    style =
       ''
 * {
     background: transparent;

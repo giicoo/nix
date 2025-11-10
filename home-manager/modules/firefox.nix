@@ -1,5 +1,5 @@
-# home.nix 
-                                                                                           
+# home.nix
+
 { pkgs, inputs, ... }:
 
 {
@@ -39,7 +39,7 @@
         "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
       };
 
-      userChrome = ''                         
+      userChrome = ''
 #sidebar-header {
   display: none;
 }
@@ -47,14 +47,15 @@
 #TabsToolbar {
   display: none;
 }
-             
-      '';                                      
 
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-        bitwarden
-        ublock-origin
-        sidebery
-      ];
+      '';
+      extensions = {
+        packages = with pkgs.nur.repos.rycee.firefox-addons; [
+            bitwarden
+            ublock-origin
+            sidebery
+        ];
+      };
 
     };
   };

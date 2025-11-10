@@ -3,7 +3,7 @@
     enable = true;
     font.name = "JetBrains Mono";
     font.size = 12;
-    theme = "Catppuccin-Mocha";
+    themeFile = "Catppuccin-Mocha";
 
     settings = {
       background_opacity = "0.9";

@@ -2,7 +2,6 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    # enableAutosuggestions = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
 
@@ -28,8 +27,8 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "sudo" ];
-      theme = "agnoster"; # blinks is also really nice
+      plugins = [ "git" "sudo" "dirhistory" "history"];
+      theme = "agnoster";
     };
   };
 }

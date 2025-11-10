@@ -28,19 +28,19 @@
         disable_logs = false;
         enable_stdout_logs = true;
       };
-                                                         
-      general = { 
+
+      general = {
           gaps_in = 5;
           gaps_out = 10;
 
           border_size = 2;
-          
+
           "col.active_border" = "rgba(595959aa)";
           "col.inactive_border" = "rgb(181818)";
-        
+
           # change size by mouse
           resize_on_border = true;
-        
+
           hover_icon_on_border = true;
           allow_tearing = false;
 
@@ -52,7 +52,7 @@
 
           active_opacity = 0.7;
           inactive_opacity = 0.7;
-        
+
           blur = {
               enabled = true;
               size = 5;
@@ -75,13 +75,11 @@
             "fade, 1, 7, default"
             "workspaces, 1, 6, default"
           ];
-          
       };
-
 
       input = {
           kb_layout = "us,ru";
-         
+
           kb_options="grp:alt_shift_toggle";
           follow_mouse = 1;
           mouse_refocus=1;
@@ -112,7 +110,7 @@
           new_status = "master";
       };
 
-      misc = { 
+      misc = {
           force_default_wallpaper = -1; # Set to 0 or 1 to disable the anime mascot wallpapers
           disable_hyprland_logo = false; # If true disables the random hyprland logo / anime girl background. :(
           middle_click_paste = false;
@@ -123,8 +121,8 @@
           name = "epic-mouse-v1";
           sensitivity = -0.5;
       };
-     
-      "$mainMod" = "SUPER";    
+
+      "$mainMod" = "SUPER";
 
       "$terminal" = "kitty";
       "$fileManager" = "nemo";

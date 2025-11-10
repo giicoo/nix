@@ -8,7 +8,7 @@
     };
 
     swww.url = "github:LGFae/swww";
-    
+
     silentSDDM = {
       url = "github:uiriansan/SilentSDDM";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -44,7 +44,7 @@
         inherit inputs system;
       };
       modules = [
-        
+
         ./nixos/configuration.nix
       ];
     };
@@ -55,15 +55,15 @@
         config.allowUnfree = true;
 
         overlays = [
-          nur.overlay  # <--- ВОТ ЭТО важно!
+          nur.overlays.default  # <--- ВОТ ЭТО важно!
         ];
       };
-      extraSpecialArgs = { 
-        inherit inputs; 
+      extraSpecialArgs = {
+        inherit inputs;
         inherit nur;
       };
 
- 
+
       modules = [
         nur.modules.homeManager.default
         ./home-manager/home.nix
