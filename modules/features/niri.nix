@@ -29,6 +29,11 @@
         environment = {
           QT_STYLE_OVERRIDE = "kvantum";
           QT_QPA_PLATFORMTHEME = "kvantum";
+          GDK_CORE_DEVICE_EVENTS = "1";
+        };
+
+        clipboard = {
+          disable-primary = true;
         };
 
         xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
@@ -49,6 +54,8 @@
             width = 3;
             active-color = "#ffffff";
           };
+
+          # center-focused-column = "always";
 
           focus-ring = {
             width = 5;

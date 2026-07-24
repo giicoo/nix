@@ -9,11 +9,12 @@
         let flakeDir = "~/nix";
         in {
           nrs = "sudo nixos-rebuild switch --flake ${flakeDir}#tokito";
-          conf = "zeditor ${flakeDir}";
+          conf = "zeditor --new ${flakeDir}";
           ll = "ls -l";
           v = "nvim";
           se = "sudoedit";
           ff = "fastfetch";
+          zz = "zeditor --new .";
         };
 
       promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
