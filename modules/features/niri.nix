@@ -26,6 +26,20 @@
           "awww-daemon"
         ];
 
+        outputs."HDMI-A-1" = {
+          transform = "270";
+          position = _: {
+              props = {
+                x = 0;
+                y = -1280;
+              };
+            };
+        };
+
+        animations = {
+            off = _: { };
+          };
+
         environment = {
           QT_STYLE_OVERRIDE = "kvantum";
           QT_QPA_PLATFORMTHEME = "kvantum";
@@ -86,8 +100,8 @@
           "Mod+C".close-window = _: { };
           "Mod+M".quit = _: { };
 
-          "Mod+P".spawn-sh = "poweroff";
-          "Mod+O".spawn-sh = "reboot";
+          "Mod+P".spawn-sh = "";
+          "Mod+O".spawn-sh = "";
 
           "Mod+T".toggle-window-floating = _: { };
 

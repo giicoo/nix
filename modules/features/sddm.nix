@@ -9,7 +9,7 @@
           owner = "xCaptaiN09";
           repo = "echo-sddm";
           rev = "master";
-          sha256 = "sha256-7Us7dzaGc/x1Vf8XFfHEMjB+xzhmMd4U5rtJJLI8e18=";
+          sha256 = "sha256-J8JCTkbQhhxJam3GmmHLAt8sRqGqLUsBdkehUjvJZbs=";
         };
 
         installPhase = ''

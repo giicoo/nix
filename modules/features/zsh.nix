@@ -10,6 +10,7 @@
         in {
           nrs = "sudo nixos-rebuild switch --flake ${flakeDir}#tokito";
           conf = "zeditor --new ${flakeDir}";
+          confhx = "hx ${flakeDir}";
           ll = "ls -l";
           v = "nvim";
           se = "sudoedit";

@@ -14,6 +14,21 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    vague-helix = {
+        url = "github:vague-theme/vague-helix";
+        flake = false;
+      };
+
+    vague-yazi = {
+      url = "github:vague-theme/vague.yazi";
+      flake = false;
+    };
+
+    rust-overlay = {
+        url = "github:oxalica/rust-overlay";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake

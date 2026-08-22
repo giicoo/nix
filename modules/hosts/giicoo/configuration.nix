@@ -19,13 +19,18 @@
       self.nixosModules.tailscale
       self.nixosModules.office
       self.nixosModules.go
+      self.nixosModules.rust
       self.nixosModules.python
       self.nixosModules.js
-      self.nixosModules.nvim
       self.nixosModules.ctf
       self.nixosModules.yazi
       self.nixosModules.nixos
       self.nixosModules.android
+      self.nixosModules.devops
+      self.nixosModules.obs
+      self.nixosModules.lazygit
+      self.nixosModules.zellij
+      self.nixosModules.helix
       self.nixosModules.obsidian
       self.nixosModules.amnezia
       self.nixosModules.home-manager
@@ -63,6 +68,7 @@
       go-task
       openssl
       krita
+      davinci-resolve
     ];
 
     fonts.packages = with pkgs; [

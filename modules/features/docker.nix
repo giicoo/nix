@@ -8,5 +8,9 @@
             setSocketVariable = true;
         };
     };
+
+    virtualisation.podman = {
+      enable = true;
+    };
   };
 }

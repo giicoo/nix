@@ -8,7 +8,7 @@
         owner = "vague-theme";
         repo = "vague-gtk";
         rev = "main";
-        hash = "sha256-e76bW8cKjiIwmb6e7/wbXfoB4Fwu8SOs1gLrtzqQRe4=";
+        hash = "sha256-eEP4r/0Kb7RyB45pSe47bHwAx40gG/3XWGlr/UB7g4g=";
       };
       installPhase = ''
         runHook preInstall
